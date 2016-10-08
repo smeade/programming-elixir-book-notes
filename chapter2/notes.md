@@ -58,6 +58,4 @@ That’s why I talk about pattern matching as the first chapter in this part of 
 
 >  I wanted to get you thinking differently about programming languages and to show you that some of your existing assumptions won’t work in Elixir.
 
-I like Dave's writing style. I like how he hasn't written just a technical reference book, but a guide to thinking about what Elixir is and how it works. It's a journey to reconsider what you thought you just _knew_ about programming.
-
-One can find most technical details of a language easily online. What I enjoy about books like this is to be brought along on a thought-journey of a thought-leader. That is something I find best done by books like this one.
+I like Dave's writing style. I like how he hasn't written a technical reference book. It's a journey to reconsider what we OOP programmers thought we knew about programming. One can find most technical details of a language easily online. What I enjoy about books like this is the chance to follow the thought-journey of a thought-leader.

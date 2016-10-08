@@ -43,4 +43,4 @@ A year ago, I was one of those developers that was all-in on object-orientated p
 
 Over the past year I have been putting a lot of thought into "thinking". Not just thinking related to programming, but thinking about all areas of personal and professional development.
 
-I'm looking forward to the opportunity with Elixir to Think Different(ly).
+I realize I'm late to the Elixir bandwagon. The first _Programming Elixir_ book came out two years ago and was being written three years ago. Yet it still feels brand new to me. So, I'm looking forward to the opportunity with Elixir to Think Different(ly).
