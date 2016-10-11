@@ -1,4 +1,4 @@
-# Immutability
+## Immutability
 
 * Elixir enforces immutability
 * it is a functional language after all

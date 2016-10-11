@@ -1,4 +1,4 @@
-# Elixir Basics
+## Elixir Basics
 
 ### Value Types
 

@@ -1,6 +1,6 @@
-# Pattern Matching
+## Pattern Matching
 
-## Assignment
+### Assignment
 
 * `=` is as an assertion, not an assignment.
 * Elixir looks for ways to make LHV the same as the RHV.
@@ -51,7 +51,7 @@ iex(20)> [^a, 2, 3] = [4, 2, 3 ]
 ** (MatchError) no match of right hand side value: [4, 2, 3]
 ```
 
-## Looking differently at the Equals Sign
+### Looking differently at the Equals Sign
 
 > you had to unlearn the algebraic meaning of = when you first came across assignment in imperative programming languages. Now’s the time to un-unlearn it.
 That’s why I talk about pattern matching as the first chapter in this part of the book. It is a core part of Elixir—we’ll also use it in conditions, function calls, and function invocation.
