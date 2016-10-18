@@ -1,5 +1,9 @@
 ## Anonymous Functions
 
+In the department of the obvious: I've found that thinking in terms of functions is the largest jump from Ruby to Elixir. Transformation of data is the primary purpose of programming, it's raison d'etre. Functions are what let us do the transforming. Besides thinking in functions, thinking in terms of transformation is another leap for me.
+
+The final and related big leap covered in this chapter is the ability to stop thinking in terms of if/else, but instead leverage pattern matching - one of Elixir's most powerful concepts.
+
 ### Functions
 
 * are a basic type
@@ -81,3 +85,97 @@ iex(26)> fb.(16)
 16
 ```
 
+### Functions Returning Functions
+
+```Elixir
+iex(1)> fun1 = fn -> (fn -> "Hey!" end) end
+#Function<20.52032458/0 in :erl_eval.expr/5>
+iex(2)> fun2 = fun1.()
+#Function<20.52032458/0 in :erl_eval.expr/5>
+iex(3)> fun2.()
+"Hey!"
+iex(4)> fun1.().()
+"Hey!"
+```
+
+#### Closure / Parameterized Functions
+
+> functions in Elixir automatically carry with them the bindings of variables in the scope in which they are defined
+
+> Write a function prefix that takes a string. It should return a new function that takes a second string. When that second function is called, it will return a string containing the first string, a space, and the second string.
+
+```Elixir
+# Exercise: Functions-4
+iex(1)> prefix = fn string1 -> (fn string2 -> "#{string1} #{string2}" end) end
+#Function<6.52032458/1 in :erl_eval.expr/5>
+iex(2)> mrs = prefix.("Mrs")
+#Function<6.52032458/1 in :erl_eval.expr/5>
+iex(3)> mrs.("Smith")
+"Mrs Smith"
+iex(4)> mr = prefix.("Mr")
+#Function<6.52032458/1 in :erl_eval.expr/5>
+iex(5)> mr.("Jones")
+"Mr Jones"
+iex(6)> prefix.("Elixir").("Rocks")
+"Elixir Rocks"
+```
+
+### Passing Functions As Arguments
+
+Because functions are values, they can be passed to other functions.
+
+```Elixir
+iex(1)> times3 = fn n -> n * 3 end
+#Function<6.52032458/1 in :erl_eval.expr/5>
+iex(2)> apply = fn (fun, value) -> fun.(value) end
+#Function<12.52032458/2 in :erl_eval.expr/5>
+iex(3)> apply.(times3, 6)
+18
+```
+
+```Elixir
+iex(5)> list = [1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+iex(6)> Enum.map list, fn elem -> elem * 2 end
+[2, 4, 6, 8, 10]
+iex(7)> Enum.map list, fn elem -> elem * elem end
+[1, 4, 9, 16, 25]
+```
+
+### & Notation
+
+```Elixir
+iex(8)> add_one = &(&1 + 1)
+#Function<6.52032458/1 in :erl_eval.expr/5>
+iex(9)> add_one.(55)
+56
+```
+
+> Because [] and {} are operators in Elixir, literal lists and tuples can also be turned into functions.
+
+Exercise: Functions-5: Use the &... notation to rewrite the following.
+
+```Elixir
+iex(12)> Enum.map [1,2,3,4], fn x -> x + 2 end
+[3, 4, 5, 6]
+iex(13)> Enum.map [1,2,3,4], &(&1 + 2)
+[3, 4, 5, 6]
+
+Interactive Elixir (1.3.3) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> Enum.each [1,2,3,4], fn x -> IO.inspect x end
+1
+2
+3
+4
+:ok    
+iex(2)> Enum.each [1,2,3,4], &(IO.inspect &1)
+1
+2
+3
+4
+:ok
+```
+
+### Functions!
+
+> At the start of the book, we said the basis of programming is transforming data. Functions are the little engines that perform that transformation. They are at the very heart of Elixir.
