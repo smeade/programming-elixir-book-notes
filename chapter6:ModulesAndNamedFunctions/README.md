@@ -2,9 +2,9 @@
 
 ### Chapter Notes
 
-Working through the exercises in the book is pretty straightforward because the prompts are written out in a way that make them easy to turn into code.
+Working through the exercises in the book is pretty straightforward so far because the prompts are written out in a way that make them easy to turn into code.
 
-The challenge when writing my own functions will be to frame the problem in a functional manner. Distilling the purpose of a function down to it's "functional" description can be a challenge. Elixir helps by lending itself to small functions that do one thing.
+The challenge when writing one's own functions is to frame the problem in a functional manner. Distilling the purpose of a function down to its "functional" description can be a challenge. Elixir helps by lending itself to small functions that do one thing.
 
 ### Named functions
 

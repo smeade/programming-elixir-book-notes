@@ -1,5 +1,9 @@
 ## Pattern Matching
 
+### Chapter notes
+
+I like Dave's writing style. I like how he hasn't written a technical reference book. It's a journey to reconsider what we OOP programmers thought we knew about programming. One can find most technical details of a language easily online. What I enjoy about books like this is the chance to follow the thought-journey of a thought-leader.
+
 ### Assignment
 
 * `=` is as an assertion, not an assignment.
@@ -58,6 +62,3 @@ That’s why I talk about pattern matching as the first chapter in this part of 
 
 >  I wanted to get you thinking differently about programming languages and to show you that some of your existing assumptions won’t work in Elixir.
 
-### Chapter notes
-
-I like Dave's writing style. I like how he hasn't written a technical reference book. It's a journey to reconsider what we OOP programmers thought we knew about programming. One can find most technical details of a language easily online. What I enjoy about books like this is the chance to follow the thought-journey of a thought-leader.
