@@ -1,6 +1,8 @@
 ## Anonymous Functions
 
-My notes: In the department of the obvious: I've found that thinking in terms of functions is the largest jump from Ruby to Elixir. Transformation of data is the primary purpose of programming, it's raison d'etre. Functions are what let us do the transforming.
+### Chapter Notes
+
+In the department of the obvious: I've found that thinking in terms of functions is the largest jump from Ruby to Elixir. Transformation of data is the primary purpose of programming, it's raison d'etre. Functions are what let us do the transforming.
 
 A related leap covered in this chapter is that Elixir languages encourages thinking declaratively via pattern matching.
 

@@ -34,6 +34,8 @@ iex(6)> name
 
 > In Elixir, once a variable references a list such as [1,2,3], you know it will always reference those same values (until you rebind the variable). And this makes concurrency a lot less frightening.
 
+### Chapter Notes
+
 The difference between assignment and binding is nuanced, especially I suspect for new programmers. As Dave points out, immutability in Elixir does not mean that you cannot rebind a variable. Dave does not go into much explanation here. I suspect in order to keep things moving.
 
 Let me see if I can explain to myself in another way. Say you have a bumper sticker on your car. Say the bumper on your car is your variable containing the sticker. (bumper = sticker in psuedo-code (?)) The sticker says "Ruby!". In a mutable-allowed language, you could change the bumper sticker to read "Elixir!". Your bumper would still contain the same sticker (in psuedo-code, bumper would still reference the same sticker), but the sticker now says "Elixir!".
