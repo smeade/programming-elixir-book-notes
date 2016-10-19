@@ -1,8 +1,10 @@
 ## Anonymous Functions
 
-In the department of the obvious: I've found that thinking in terms of functions is the largest jump from Ruby to Elixir. Transformation of data is the primary purpose of programming, it's raison d'etre. Functions are what let us do the transforming. Besides thinking in functions, thinking in terms of transformation is another leap for me.
+My notes: In the department of the obvious: I've found that thinking in terms of functions is the largest jump from Ruby to Elixir. Transformation of data is the primary purpose of programming, it's raison d'etre. Functions are what let us do the transforming.
 
-The final and related big leap covered in this chapter is the ability to stop thinking in terms of if/else, but instead leverage pattern matching - one of Elixir's most powerful concepts.
+A related leap covered in this chapter is that Elixir languages encourages thinking declaratively via pattern matching.
+
+(I know functional, declarative programming is not a silver bullet and also know that beautiful and fine OO and imperative code is written every day - but allow me this ray of newbie hope and optimism.)
 
 ### Functions
 
