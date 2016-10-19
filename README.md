@@ -1,5 +1,4 @@
-#### Programming Elixir
-#### Functional |> Concurrent |> Pragmatic |> Fun
+#### Programming Elixir: Functional |> Concurrent |> Pragmatic |> Fun
 
 Notes and exercises while reading through [Programming Elixir](https://pragprog.com/book/elixir/programming-elixir) by [Dave Thomas](https://twitter.com/pragdave).
 
