@@ -1,5 +1,7 @@
 ## Modules and Named Functions
 
+Notes and exercises while reading through [Programming Elixir](https://pragprog.com/book/elixir/programming-elixir) by [Dave Thomas](https://twitter.com/pragdave).
+
 ### Chapter Notes
 
 So far, solving the exercises in the book is pretty straightforward because the prompts are written out in a way that make them easy to turn into code. The challenge when writing one's own functions will be to frame the problem in a functional manner. Distilling the purpose of a function down to its "functional" description can be a challenge. Elixir helps by lending itself to small functions that do one thing.
@@ -51,17 +53,17 @@ Use `do:` for single line functions and `do..end` for multi-line functions.
 
 > Extend the Times module with a triple function that multiplies its parameter by three. Add a quadruple function. (Maybe it could call the double function....)
 
-See `times.exs`.
+See [times.exs](times.exs).
 
 ### Function Calls and Pattern Matching
 
 Multiple definitions of the same function allow us to start by implementing the simplest case with a known return value. Then use that case recursively in other definitions.
 
-See `factorial1.exs`.
+See [factorial1.exs](factorial1.exs).
 
 #### Exercises
 
-See `recursion.exs`.
+See [recursion.exs](recursion.exs).
 
 ### Guard Classes
 
@@ -141,7 +143,7 @@ ArgumentError: wrong number of arguments (1 for 2..4)
 
 Wrote a guesser function that finds a number by guessing halfway between the low and high of a range. Continues to adjust the number and the range until the guess matches the number.
 
-See `chop.exs`.
+My solution is [chop.exs](chop.exs).
 
 ### The Pipe Operator: |>
 
@@ -206,4 +208,4 @@ Parser.parse()
 * top-level module-level only, functions do not have attributes
 * think of them as constants used for configuration and metadata
 
-see: attributes.exs
+see: [attributes.exs](attributes.exs).
