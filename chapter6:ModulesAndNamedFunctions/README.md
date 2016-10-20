@@ -4,7 +4,7 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
 
 ### Chapter Notes
 
-So far, solving the exercises in the book is pretty straightforward because the prompts are written out in a way that make them easy to turn into code. The challenge when writing one's own functions will be to frame the problem in a functional manner. Distilling the purpose of a function down to its "functional" description can be a challenge. Elixir helps by lending itself to small functions that do one thing.
+So far, solving the exercises in the book is pretty straightforward because the prompts are written out in a way that make them easy to turn into code. The challenge when writing one's own functions is to frame the problem in a functional manner. Distilling the purpose of a function down to its "functional" description can be a challenge. Elixir helps by lending itself to small functions that do one thing.
 
 *Error messages* in Elixir are great. The error messages don't just say 'fail', but also give a recommendation on how you might resolve the unexpected error.
 
