@@ -6,7 +6,7 @@ Working through the exercises in the book is pretty straightforward so far becau
 
 The challenge when writing one's own functions is to frame the problem in a functional manner. Distilling the purpose of a function down to its "functional" description can be a challenge. Elixir helps by lending itself to small functions that do one thing.
 
-*Error messages* in Elixir are great. I've never seen such helpful responses when you do something unexpected or unhandled. The error message doesn't just say 'fail', but also gives a recommendation on how you might resolve the unexpected error.
+*Error messages* in Elixir are great. The error messages don't just say 'fail', but also give a recommendation on how you might resolve the unexpected error.
 
 Here's a lengthy example from this chapter:
 
@@ -138,3 +138,74 @@ Ruby:
 2.0.0-p353 :043 > func("a")
 ArgumentError: wrong number of arguments (1 for 2..4)
 ```
+
+#### Exercise!
+
+Wrote a guesser function that finds a number by guessing halfway between the low and high of a range. Continues to adjust the number and the range until the guess matches the number.
+
+See `chop.exs`.
+
+### The Amazing Pipe Operator: |>
+
+Cool!
+
+Instead of:
+
+```Ruby
+people = DB.find_customers
+orders = Orders.for_customers(people)
+tax    = sales_tax(orders, 2016)
+filing = prepare_filing(tax)
+```
+
+```Elixir
+filing = DB.find_customers
+           |> Orders.for_customers
+           |> sales_tax(2016)
+           |> prepare_filing
+```
+
+### Modules
+
+* provide namespaces, like so:
+
+```Elixir
+defmodule Mod do
+  def func1 do
+    IO.puts "in func1"
+  end
+  def func2 do
+    func1
+    IO.puts "in func2"
+  end
+end
+Mod.func1
+Mod.func2
+```
+
+#### The import directive
+
+* brings a module’s functions and/or macros into the current scope
+* so that you don't need to repeat the module name over and over.
+
+```Elixir
+import List, only: [ flatten: 1, duplicate: 2 ]
+```
+
+#### The alias directive
+
+* make for shorter names
+
+```Elixir
+alias My.Other.Module.Parser, as: Parser
+...
+Parser.parse()
+```
+
+### Module Attributes
+
+* `@name value`
+* top-level module-level only, functions do not have attributes
+* think of them as constants used for configuration and metadata
+
+see: attributes.exs
