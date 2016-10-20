@@ -143,7 +143,7 @@ Wrote a guesser function that finds a number by guessing halfway between the low
 
 See `chop.exs`.
 
-### The Amazing Pipe Operator: |>
+### The Pipe Operator: |>
 
 Cool!
 
