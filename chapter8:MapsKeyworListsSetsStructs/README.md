@@ -197,7 +197,7 @@ iex(18)> MapSet.difference set2, set1
 #MapSet<[]>
 ```
 
-### Conclusion!
+### Words of Wisdom from Dave Thomas
 
 > You can write something akin to object-oriented code using structs (or maps) and modules.
 This is a bad idea—not because objects are intrinsically bad, but because you’ll be mixing paradigms and diluting the benefits a functional approach gives you.
