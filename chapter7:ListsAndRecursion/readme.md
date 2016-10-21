@@ -30,7 +30,7 @@ I'm also anxious to read [Programming Pheonix](https://pragprog.com/book/phoenix
 
 ### Heads and Tails
 
-* Recursive because a list's tail is a list.
+* Recursive because a list's tail is itself a list.
 * []
 * [ y | [] ]
 * [ x | [ y | [] ] ]
