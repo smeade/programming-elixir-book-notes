@@ -25,8 +25,6 @@ Interestingly, Erlang does not even allow re-binding. See: José Valim's [Compar
 ###Coding
 * Functions that transform data return a new copy of the data.
 * Functions always transform and never change the data in place.
-* ^ this is the very definition of functional programming at any rate,
-* so this is mostly a reminder and a chance to be reminded that immutability is a good thing.
 
 ```Elixir
 iex(1)> name = "favstar"
