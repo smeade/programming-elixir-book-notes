@@ -13,9 +13,7 @@ Is:
 
 In the object-orientated world, you think of classes and instances.
 
-> ... data-hiding. But that's not the real world. In the real world, we don't want to model abstract hierarchies (because in reality there aren't that many true hierarchies). We want to get things done, not maintain state. I don't want to hide data. I want to transform it.
-
-> - Dave Thomas
+> ... data-hiding. But that's not the real world. In the real world, we don't want to model abstract hierarchies (because in reality there aren't that many true hierarchies). We want to get things done, not maintain state. I don't want to hide data. I want to transform it. - Dave Thomas
 
 ### Combine Transforms with Pipelines
 
