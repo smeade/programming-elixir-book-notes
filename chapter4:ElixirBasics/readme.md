@@ -1,3 +1,5 @@
+Notes and exercises while reading through [Programming Elixir](https://pragprog.com/book/elixir13/programming-elixir-1-3) by [Dave Thomas](https://twitter.com/pragdave).
+
 ## Elixir Basics
 
 ### Value Types
@@ -7,6 +9,7 @@
 ```Elixir
 # Atoms
 # An atom’s name is its value.
+# Like Ruby's symbols.
 iex(11)> me = :scott
 :scott
 iex(12)> she = :karen

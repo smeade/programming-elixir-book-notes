@@ -3,6 +3,7 @@
 ### Chapter Notes
 
 In this chapter, pattern matching continues its prominence. Pattern matching is used for:
+
 * searching maps
 * searching a collection of maps
 * handling results of Map methods such as `pop`
@@ -51,7 +52,7 @@ end
 ### Maps
 
 * performant!
-* well supported withy a comprehensive API, e.g.:
+* well supported with a comprehensive API, e.g.:
 
 ```Elixir
 # Create with %

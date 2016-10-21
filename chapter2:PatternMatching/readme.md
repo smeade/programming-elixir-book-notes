@@ -61,4 +61,3 @@ iex(20)> [^a, 2, 3] = [4, 2, 3 ]
 That’s why I talk about pattern matching as the first chapter in this part of the book. It is a core part of Elixir—we’ll also use it in conditions, function calls, and function invocation.
 
 >  I wanted to get you thinking differently about programming languages and to show you that some of your existing assumptions won’t work in Elixir.
-

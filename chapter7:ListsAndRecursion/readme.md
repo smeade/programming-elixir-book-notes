@@ -4,7 +4,7 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
 
 ### Chapter Notes
 
-I wonder if recursion is as huge a deal in Elixir as this chapter makes it seem. I can see how pattern matching makes recursion an attractive tool, but I can also see other options. This is one example of how I'm anxious to dive into some real-life Elixir code to see what happens in practice, but (for now) am comfortable going slowly through this book to get a good foundation. 
+I wonder if recursion is as huge a deal in Elixir as this chapter makes it seem. I can see how pattern matching makes recursion an attractive tool, but I can also see other options. This is one example of how I'm anxious to dive into some real-life Elixir code to see what happens in practice, but (for now) am comfortable going slowly through this book to get a good foundation.
 
 I started to think of the use of recursion combined with pattern matching as a `while` loop.
 
@@ -24,7 +24,7 @@ def span(from, to), do: [ from | span(from + 1, to) ]
 
 #### My Pulse
 
-I'm so ready to get through Part I - Conventional Programming part of the book and onto the Concurrent Programming chapters. But I know that I learn best by building up a foundation and so do want to have a solid understanding of these fundamentals.
+I'm so ready to get through Part I - Conventional Programming part of the book and onto the Concurrent Programming chapters. Learning how to turn the wrench is not nearly as fun as the turning itself. But I know that I learn best by building up a foundation and so do want to have a solid understanding of these fundamentals.
 
 I'm also anxious to read [Programming Pheonix](https://pragprog.com/book/phoenix/programming-phoenix) but, again, want to have at least a basic understanding and comfort with Elixir first.
 
