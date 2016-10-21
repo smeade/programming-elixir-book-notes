@@ -13,9 +13,9 @@ Is:
 
 In the object-orientated world, you think of classes and instances.
 
-> ... data-hiding. But that's not the real world. In the real world, we don't want to model abstract hierarchies (because in reality there aren't that many true hierarchies). We want to get things done, not maintain state.
+> ... data-hiding. But that's not the real world. In the real world, we don't want to model abstract hierarchies (because in reality there aren't that many true hierarchies). We want to get things done, not maintain state. I don't want to hide data. I want to transform it.
 
-> I don't want to hide data. I want to transform it.
+> - Dave Thomas
 
 ### Combine Transforms with Pipelines
 
@@ -37,8 +37,9 @@ end
 
 > If we want, we can make these functions run in parallel—Elixir has a simple but powerful mechanism for passing messages between them. And these are not your father’s boring old processes or threads—we’re talking about the potential to run millions of them on a single machine and have hundreds of these machines interoperating.
 
-> But this power comes at a price. You’re going to have to unlearn a whole lot of what you know about programming. Many of your instincts will be wrong. And this will be frustrating, because you’re going to feel like a total n00b.
-Personally, I feel that’s part of the fun.
+> But this power comes at a price. You’re going to have to unlearn a whole lot of what you know about programming. Many of your instincts will be wrong. And this will be frustrating, because you’re going to feel like a total n00b. Personally, I feel that’s part of the fun.
+
+> -- Dave Thomas
 
 ### Chapter Notes
 

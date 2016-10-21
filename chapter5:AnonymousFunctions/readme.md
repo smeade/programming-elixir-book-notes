@@ -182,4 +182,4 @@ iex(2)> Enum.each [1,2,3,4], &(IO.inspect &1)
 
 Transformation of data is the primary purpose of programming, it's raison d'etre. Functions are what let us do the transforming.
 
-> At the start of the book, we said the basis of programming is transforming data. Functions are the little engines that perform that transformation. They are at the very heart of Elixir.
+> At the start of the book, we said the basis of programming is transforming data. Functions are the little engines that perform that transformation. They are at the very heart of Elixir. - Dave Thomas

@@ -49,4 +49,6 @@ iex(6)> name
 
 > That’s enough theory. It’s time to start learning the language.
 
+> -- Dave Thomas
+
 I agree - let's go!
