@@ -1,6 +1,6 @@
 ## Modules and Named Functions
 
-Notes and exercises while reading through [Programming Elixir](https://pragprog.com/book/elixir/programming-elixir) by [Dave Thomas](https://twitter.com/pragdave).
+Notes and exercises while reading through [Programming Elixir](https://pragprog.com/book/elixir13/programming-elixir-1-3) by [Dave Thomas](https://twitter.com/pragdave).
 
 ### Chapter Notes
 
