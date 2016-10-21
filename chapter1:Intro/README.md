@@ -4,9 +4,9 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
 
 Is:
 * functional
-* immutable state
-* actor-based concurrency
-* "in a tidy, modern syntax"
+* with immutable state
+* and actor-based concurrency
+* wrapped up "in a tidy, modern syntax"
 * "industrial strength, high-performance" via Erlang VM
 
 ### Programming Should Be About Transforming Data
