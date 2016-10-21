@@ -1,8 +1,10 @@
 ## Lists and Recursion
 
+Notes and exercises while reading through [Programming Elixir](https://pragprog.com/book/elixir13/programming-elixir-1-3) by [Dave Thomas](https://twitter.com/pragdave).
+
 ### Chapter Notes
 
-Is recursion as huge a deal in Elixir as this chapter makes it seem? I can see how pattern matching makes recursion an attractive tool, but I can also see other options. Anxious to dive into some real-life Elixir code to see what happens in practice.
+I wonder if recursion is as huge a deal in Elixir as this chapter makes it seem. I can see how pattern matching makes recursion an attractive tool, but I can also see other options. This is one example of how I'm anxious to dive into some real-life Elixir code to see what happens in practice, but (for now) am comfortable going slowly through this book to get a good foundation. 
 
 I started to think of the use of recursion combined with pattern matching as a `while` loop.
 
@@ -10,7 +12,7 @@ I started to think of the use of recursion combined with pattern matching as a `
   def span(from, to) when from <= to do: [ from | span(from + 1, to) ]
 ```
 
-Is like saying `while from <= to...`. Just be sure to have another function that captures the other cases `when from > to`. Or even better, treat the recursive part as the general case and remove the `when` from it.
+Is like saying `while from <= to...`. I don't think this is the intent, but it's how my brain saw it at first. Just be sure to have another function that captures the other cases `when from > to`. The Elixir way though is to treat the recursive part as the general case and remove the `when` from it.
 
 ```Elixir
 # stop recursion when from > to
@@ -20,7 +22,7 @@ def span(from, to) when from > to, do: []
 def span(from, to), do: [ from | span(from + 1, to) ]
 ```
 
-### My Pulse
+#### My Pulse
 
 I'm so ready to get through Part I - Conventional Programming part of the book and onto the Concurrent Programming chapters. But I know that I learn best by building up a foundation and so do want to have a solid understanding of these fundamentals.
 
