@@ -204,4 +204,4 @@ This is a bad ideaâ€”not because objects are intrinsically bad, but because youâ
 
 > Stay pure, young coder. Stay pure.
 
-> - Dave Thomas
+> -- Dave Thomas
