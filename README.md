@@ -9,3 +9,4 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
   * [Chapter 4: Elixir Basics](./chapter4:ElixirBasics)
   * [Chapter 5: Anonymous Functions](./chapter5:AnonymousFunctions)
   * [Chapter 6: Modules and Named Functions](./chapter6:ModulesAndNamedFunctions)
+  * [Chapter 7: Lists and Recursion](./chapter7:ListsAndRecursion)
