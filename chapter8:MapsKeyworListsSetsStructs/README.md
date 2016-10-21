@@ -14,7 +14,9 @@ As a developer, I under-utilize Sets. Because you can do set-type logic with Arr
 
 This chapter had no exercises. So I just made up some of my own as I went along. This chapter briefly used `for` and comprehensions before they are explained (in chapter 10).
 
-An aside: [msaraiva's](https://github.com/msaraiva) [Atom package for Elixir](https://github.com/msaraiva/atom-elixir) is really good.
+An aside: [msaraiva's](https://github.com/msaraiva) [Atom package for Elixir](https://github.com/msaraiva/atom-elixir) is really good. It's pulls up doc specs and descriptions in the auto-complete window, supports tab-completion of arguments, etc.
+
+![screenshot](../images/atom.png)
 
 ### When to use which:
 
