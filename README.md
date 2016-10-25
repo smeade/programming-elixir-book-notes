@@ -11,4 +11,5 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
   * [Chapter 6: Modules and Named Functions](./chapter6:ModulesAndNamedFunctions)
   * [Chapter 7: Lists and Recursion](./chapter7:ListsAndRecursion)
   * [Chapter 8: Maps, Keyword Lists, Sets, and Structs](./chapter8:MapsKeyworListsSetsStructs)
-  
+  * [Chapter 9: What are Types](./chapter9:WhatAreTypes)
+  * [Chapter 10: Processing Collections - Enum and Stream](./chapter10:ProcessingCollections)
