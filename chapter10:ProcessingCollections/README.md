@@ -40,6 +40,11 @@ iex(13)> Enum.all?(list, &(&1 < 25))
 false
 iex(14)> Enum.any?(list, &(&1 < 25))
 true
+```
+
+Reduce:
+
+```Elixr
 iex(15)> Enum.reduce(1..100, &(&1+&2))
 5050
 iex(16)> Enum.reduce(1..2, &(&1+&2))  
