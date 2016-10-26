@@ -14,3 +14,19 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
   * [Chapter 9: What are Types](./chapter9:WhatAreTypes)
   * [Chapter 10: Processing Collections - Enum and Stream](./chapter10:ProcessingCollections)
   * [Chapter 11: Strings and Binaries](./chapter11:StringsAndBinaries)
+  * [Chapter 12: Control Flow](./chapter12:ControlFlow)
+
+
+###### Sources
+
+Some code examples and notes in this repository are inspired by The Pragmatic Bookshelf. The Pragmatic Bookshelf provides the following notice at the top of each of their code samples. My repos here is not intended as training material, course, book or article and little of the code is published here verbatim.
+```
+#---
+# Excerpted from "Programming Elixir 1.3",
+# published by The Pragmatic Bookshelf.
+# Copyrights apply to this code. It may not be used to create training material,
+# courses, books, articles, and the like. Contact us if you are in doubt.
+# We make no guarantees that this code is fit for any purpose.
+# Visit http://www.pragmaticprogrammer.com/titles/elixir13 for more book information.
+#---
+```
