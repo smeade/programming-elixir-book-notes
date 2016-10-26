@@ -13,3 +13,4 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
   * [Chapter 8: Maps, Keyword Lists, Sets, and Structs](./chapter8:MapsKeyworListsSetsStructs)
   * [Chapter 9: What are Types](./chapter9:WhatAreTypes)
   * [Chapter 10: Processing Collections - Enum and Stream](./chapter10:ProcessingCollections)
+  * [Chapter 11: Strings and Binaries](./chapter11:StringsAndBinaries)
