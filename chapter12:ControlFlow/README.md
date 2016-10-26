@@ -57,7 +57,7 @@ defmodule FizzBuzz do
 end
 ```
 
-The cool thing is we wrote a FizzBuzz using no control flow logic in [Chapter 5, Anonymous Functions(../chapter5:AnonymousFunctions/README.md). Here is a modularized version.
+The cool thing is we wrote a FizzBuzz using no control flow logic in [Chapter 5, Anonymous Functions](../chapter5:AnonymousFunctions/readme.md). Here is a modularized version.
 
 ```Elixir
 #---
