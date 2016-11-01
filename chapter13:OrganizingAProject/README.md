@@ -168,4 +168,32 @@ Generated escript issues with MIX_ENV=dev
 * compile-time config in `config.exs`
 * run-time config via `Logger.configure`
 
+### Task: Create Project Documentation
+
+* `ex_doc`  - documentation tool
+* `earmark` - output formatter
+
+Add these dependencies and any additional project information into `mix.exs`, then:
+
+```
+work:issues smeade$ mix deps.get
+Running dependency resolution
+Dependency resolution completed
+  earmark: 1.0.2
+  ex_doc: 0.14.3
+* Getting ex_doc (Hex package)
+  Checking package (https://repo.hex.pm/tarballs/ex_doc-0.14.3.tar)
+  Fetched package
+* Getting earmark (Hex package)
+  Checking package (https://repo.hex.pm/tarballs/earmark-1.0.2.tar)
+  Fetched package
+```
+
+and to generate docs:
+
+```
+work:issues smeade$ mix docs
+Docs successfully generated.
+View them at "doc/index.html".
+```
 
