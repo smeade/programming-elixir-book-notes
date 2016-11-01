@@ -15,7 +15,7 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
   * [Chapter 10: Processing Collections - Enum and Stream](./chapter10:ProcessingCollections)
   * [Chapter 11: Strings and Binaries](./chapter11:StringsAndBinaries)
   * [Chapter 12: Control Flow](./chapter12:ControlFlow)
-
+  * [Chapter 13: Organizing a Project](./chapter13:OrganizingAProject)
 
 ###### Sources
 
