@@ -123,7 +123,6 @@ Use built-in `Enum.take`.
   end
 ```
 
-
 ### Transformation: Format the Table
 
 ```Elixir
@@ -162,4 +161,11 @@ Compiling 4 files (.ex)
 Generated issues app
 Generated escript issues with MIX_ENV=dev
 ```
+
+### Task: Add Some Logging
+
+* Four levels of messages: `debug`, `info`, `warn`, `error`.
+* compile-time config in `config.exs`
+* run-time config via `Logger.configure`
+
 
