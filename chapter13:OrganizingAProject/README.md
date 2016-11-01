@@ -98,3 +98,68 @@ def application do
 end
 ```
 
+### Transformation: Sort Data
+
+So far...
+
+```Elixir
+  def process({user, project, count}) do
+    Issues.GithubIssues.fetch(user, project)
+    |> decode_response
+    |> sort_into_ascending_order
+  end
+```
+
+### Transformation: Take First n Items
+
+Use built-in `Enum.take`.
+
+```Elixir
+  def process({user, project, count}) do
+    Issues.GithubIssues.fetch(user, project)
+    |> decode_response
+    |> sort_into_ascending_order
+    |> Enum.take(count)
+  end
+```
+
+
+### Transformation: Format the Table
+
+```Elixir
+  def process({user, project, count}) do
+    Issues.GithubIssues.fetch(user, project)
+    |> decode_response
+    |> sort_into_ascending_order
+    |> Enum.take(count)
+    |> print_table_for_columns(["number", "created_at", "title"])
+  end
+```
+
+```Elixir
+work:issues smeade$ mix test
+.........
+
+Finished in 0.04 seconds
+9 tests, 0 failures
+```
+
+### Task: Make a Command-Line Executable
+
+>
+Mix can package our code, along with its dependencies, into a single file that can be run on any Unix-based platform
+
+* mix can package the app into an executable file
+* leverages Erlang's `escript`
+* and `main_module` `escript` configuration setting
+* where main_module is a module containing a `main` function.
+
+After adding configuration information and renaming `run` to `main`, generate executable like so:
+
+```
+work:issues smeade$ mix escript.build
+Compiling 4 files (.ex)
+Generated issues app
+Generated escript issues with MIX_ENV=dev
+```
+
