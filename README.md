@@ -3,7 +3,7 @@
 Notes and exercises while reading through [Programming Elixir](https://pragprog.com/book/elixir/programming-elixir) by [Dave Thomas](https://twitter.com/pragdave).
 
 * [Chapter 1: Intro](./chapter1:Intro)
-* Part 1: Conventional Programming
+* Part I: Conventional Programming
   * [Chapter 2: Pattern Matching](./chapter2:PatternMatching)
   * [Chapter 3: Immutability](./chapter3:Immutability)
   * [Chapter 4: Elixir Basics](./chapter4:ElixirBasics)
@@ -16,6 +16,9 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
   * [Chapter 11: Strings and Binaries](./chapter11:StringsAndBinaries)
   * [Chapter 12: Control Flow](./chapter12:ControlFlow)
   * [Chapter 13: Organizing a Project](./chapter13:OrganizingAProject)
+  * [Chapter 14: Tooling](./chapter14:Tooling)
+* Part II: Concurrent Programming
+  * [Chapter 15: Working with Multiple Processes](./chapter15:MultipleProcesses)
 
 ###### Sources
 
