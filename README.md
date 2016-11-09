@@ -20,7 +20,13 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
 * Part II: Concurrent Programming
   * [Chapter 15: Working with Multiple Processes](./chapter15:MultipleProcesses)
 
-###### Sources
+#### References
+
+Here are links to info I referenced along the way to expand on topics covered in the book.
+
+* [Understanding Exit Signals in Erlang/Elixir](http://crypt.codemancers.com/posts/2016-01-24-understanding-exit-signals-in-erlang-slash-elixir/)
+
+#### Sources
 
 Some code examples and notes in this repository are inspired by The Pragmatic Bookshelf. The Pragmatic Bookshelf provides the following notice at the top of each of their code samples. My repos here is not intended as training material, course, book or article and little of the code is published here verbatim.
 ```
