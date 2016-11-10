@@ -182,3 +182,52 @@ Experimenting with [link3.exs](spawn/link3.exs):
   * the `exit` is received as a message of
   * `{:EXIT, #PID<0.76.0>, :normal}` or
   * `{:EXIT, #PID<0.76.0>, :whatever}`...
+
+#### Process Monitoring
+
+* monitoring spawns another process and gets notified of its termination
+* one-way only
+* monitor receives `:DOWN` message upon exit or failure
+
+```Elixir
+res = spawn_monitor(Monitor1, :sad_function, [])
+```
+
+#### exercises
+
+Turns out I already did some of these exercises on my own earlier in order to experiment and learn more. Onward!
+
+#### Parallel Map
+
+Apply a function to each element in a collection, but process each element in a separate process. See [pmap.exs](spawn/pmap.exs).
+
+```Elixir
+defmodule Parallel do
+  def pmap(collection, fun) do
+    me = self
+    collection
+    |> Enum.map(fn (elem) ->
+         spawn_link fn -> (send me, { self, fun.(elem) }) end
+       end)
+    |> Enum.map(fn (pid) ->
+         receive do { ^pid, result } -> result end
+       end)
+  end
+end
+```
+
+Notes:
+* Note the assignment of `me = self`, otherwise using `self` in the spawn_link would return the spawned process itself, not the parent or `pmap` function.
+* Note the use of `^pid` instead of `_pid` or `pid`. This ensures that the receive functions are created in the order the pids from the spawn_links are generated. The matching block of the receives will each have the pid value in the param.
+
+#### A Fibonacci Server
+
+Dave's Fibonacci server code is intended to demonstrate:
+
+* the scheduler `run` function
+* handling of concurrent processing of spawned processes across cores
+* the passing of messages between a scheduler and a server
+
+This code and the Fibonacci Server message flow diagram in Dave's book is a great reminder of thinking in terms of messages. Interestingly, object-orientated code is also intended to be one in which passing messages between objects is the primary design consideration. Yet somewhere along the way the focus moved from the messages to the objects themselves.
+
+Functional programming and Elixir make the need for, and design of, message handling explicit and forefront.

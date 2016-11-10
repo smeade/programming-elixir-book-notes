@@ -13,34 +13,42 @@ defmodule MySpawn do
         flintstone
     end
   end
-end
 
-# client
-# Write a program that spawns two processes and
-# then passes each a unique token (for example, “fred” and “betty”)
-pid1 = spawn(MySpawn, :flintstone, [])
-pid2 = spawn(MySpawn, :flintstone, [])
-pid3 = spawn(MySpawn, :flintstone, [])
+  def receive_messages do
+    receive do
+      {:ok, pid, token} ->
+        IO.puts "pid reply: #{inspect self} #{inspect pid} #{token}"
+    end
 
-send pid1, {self, "fred", 1}
-send pid2, {pid1, "betty", 1}
-send pid3, {pid2, "barney", 1}
+    receive do
+      {:ok, pid, token} ->
+        IO.puts "pid reply: #{inspect self} #{inspect pid} #{token}"
+      after 100 ->
+        IO.puts "flintstone has gone away"
+    end
 
-receive do
-  {:ok, pid, token} ->
-    IO.puts "pid reply: #{inspect self} #{inspect pid} #{token}"
-end
+    receive do
+      {:ok, pid, token} ->
+        IO.puts "pid reply: #{inspect self} #{inspect pid} #{token}"
+      after 100 ->
+        IO.puts "flintstone has gone away"
+    end
+  end
 
-receive do
-  {:ok, pid, token} ->
-    IO.puts "pid reply: #{inspect self} #{inspect pid} #{token}"
-  after 100 ->
-    IO.puts "flintstone has gone away"
-end
+  def run do
+    # client
+    # Write a program that spawns two processes and
+    # then passes each a unique token (for example, “fred” and “betty”)
+    pid1 = spawn_link(MySpawn, :flintstone, [])
+    pid2 = spawn_link(MySpawn, :flintstone, [])
+    pid3 = spawn_link(MySpawn, :flintstone, [])
 
-receive do
-  {:ok, pid, token} ->
-    IO.puts "pid reply: #{inspect self} #{inspect pid} #{token}"
-  after 100 ->
-    IO.puts "flintstone has gone away"
+    send pid1, {self, "fred", 1}
+    send pid2, {self, "betty", 1}
+    send pid3, {self, "barney", 1}
+    #
+    # :timer.sleep(500)
+
+    receive_messages
+  end
 end
