@@ -228,6 +228,6 @@ Dave's Fibonacci server code is intended to demonstrate:
 * handling of concurrent processing of spawned processes across cores
 * the passing of messages between a scheduler and a server
 
-In Dave's book, the code in this chapter and the Fibonacci Server message flow diagram in particular are great reminders to think in terms of messages. It's interesting that though messages form the foundation of object-orientated code, somewhere along the way the focus moved from the messages to the objects themselves.
+The code in this chapter and the Fibonacci Server message flow diagram in particular are great reminders to think in terms of messages. It's interesting that though messages form the foundation of object-orientated code, somewhere along the way the focus moved from the messages to the objects themselves.
 
 The actor model puts message handling explicit and forefront.
