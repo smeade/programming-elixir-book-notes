@@ -20,6 +20,8 @@ Notes and exercises while reading through [Programming Elixir](https://pragprog.
 * Part II: Concurrent Programming
   * [Chapter 15: Working with Multiple Processes](./chapter15:MultipleProcesses)
   * [Chapter 16: Nodes - The Key to Distributing Services](./chapter16:Nodes)
+  * [Chapter 17: OTP: Servers](./chapter17:OTPServers)
+  * [Chapter 18: OTP: Supervisors](./chapter18:OTPSupervisors)
 
 #### References
 
