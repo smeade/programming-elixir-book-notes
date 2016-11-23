@@ -10,7 +10,9 @@ Elixir doesn’t have these issues, thanks to the architecture of the Erlang VM 
 
 ### Actor Model
 
-* An actor is "an independent process that shares nothing with any other process."
+Actor:
+* an independent process
+* shares nothing with any other process
 
 You can:
 * spawn processes
@@ -18,8 +20,8 @@ You can:
 * `receive` messages back
 
 Elixir processes are:
-* _not_ operating system processes
-* are fast and lightweight via Erlang process support
+* not operating system processes
+* fast and lightweight via Erlang process support
 * normally created in the hundreds, thousands or hundreds of thousands.
 
 ### A Simple process
@@ -30,10 +32,7 @@ defmodule SpawnBasic do
     IO.puts "Howdy!"
   end
 end
-```
 
-#### Trying it out:
-```Elixir
 Interactive Elixir (1.3.3) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> c "spawn-basic.ex"
 [SpawnBasic]
@@ -148,7 +147,7 @@ work:spawn smeade$ elixir --erl "+P 1000000" -r chain.exs -e "Chain.run(1000000)
 
 **"Write a program that spawns two processes..."**
 
-I wrote [myspawn.exs](spawn/myspawn.exs). Playing around with changes to myspawn.exs I:
+Playing around with changes to [myspawn.exs](spawn/myspawn.exs) I:
 
 * spawned three processes
 * experimented with how and when the processes receive messages and send responses
@@ -227,6 +226,8 @@ Dave's Fibonacci server code is intended to demonstrate:
 * the scheduler `run` function
 * handling of concurrent processing of spawned processes across cores
 * the passing of messages between a scheduler and a server
+
+### Messages
 
 The code in this chapter and the Fibonacci Server message flow diagram in particular are great reminders to think in terms of messages. It's interesting that though messages form the foundation of object-orientated code, somewhere along the way the focus moved from the messages to the objects themselves.
 
