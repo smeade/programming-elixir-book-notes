@@ -16,13 +16,13 @@ Instead of changing the sticker, Elixir create another sticker, this one saying 
 Interestingly, Erlang does not even allow re-binding. See: José Valim's [Comparing Elixir and Erlang variables](http://blog.plataformatec.com.br/2016/01/comparing-elixir-and-erlang-variables/) for more discussion on this.
 
 
-###"Immutable data is known data" - avoids problems
+### "Immutable data is known data" - avoids problems
 
 > GOTO was evil because we asked, "how did I get to this point of execution?" Mutability leaves us with, "how did I get to this state?" - Jessica Kerr (@jessitron) https://twitter.com/jessitron/status/333228687208112128
 
-###Immutable data structures allow for performant programs
+### Immutable data structures allow for performant programs
 
-###Coding
+### Coding
 * Functions that transform data return a new copy of the data.
 * Functions always transform and never change the data in place.
 
