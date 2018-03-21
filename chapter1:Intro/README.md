@@ -44,8 +44,8 @@ end
 > Think Different(ly)
 
 ### My Notes
-A year ago, I was one of those developers that was all-in on object-orientated programming and also saw any additional complexity in (web) app design and development as an unnecessary risk. This kept me from diving into other languages (such as Elixir) which kept me from growing as a developer.
+A year ago, I was all-in on object-orientated programming and also saw any additional complexity in (web) app design and development as an unnecessary risk. This kept me from diving into other languages (such as Elixir) which kept me from growing as a developer.
 
 Over the past year I have been putting a lot of thought into "thinking". Not just thinking related to programming, but thinking about all areas of personal and professional development.
 
-I realize I'm not early to the Elixir bandwagon. The first _Programming Elixir_ book came out more than two years ago and was being written three years ago. Yet it still feels brand new to me. So, I'm looking forward to the opportunity with Elixir to Think Different(ly). -- Scott
+I realize I'm not an early member of the Elixir community. The first _Programming Elixir_ book came out more than three years ago and was being written four years ago. Yet Elixir still feels brand new to me. So, I'm looking forward to the opportunity with Elixir to Think Different(ly). -- Scott
