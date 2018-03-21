@@ -4,7 +4,7 @@
 
 Notes and exercises while reading through [Programming Elixir](https://pragprog.com/book/elixir13/programming-elixir-1-3) by [Dave Thomas](https://twitter.com/pragdave).
 
-As much as learning new syntax, Elixir's functional and declarative programming stye is an enjoyable refactoring of my mental modal of software. I know I'm late to the bandwagon and that functional, declarative programming is not a silver bullet. I also know that beautiful and fine OO and imperative code is written every day - but allow me this ray of new hope and optimism!
+As much as learning new syntax, Elixir's functional and declarative programming stye is an enjoyable refactoring of my mental modal of software. I know that functional, declarative programming is not a silver bullet and that beautiful and fine OO and imperative code is written every day - but allow me this ray of new hope and optimism!
 
 ### Functions
 
