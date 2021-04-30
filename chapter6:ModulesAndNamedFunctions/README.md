@@ -45,7 +45,7 @@ iex(2)> Times.double(4)
 
 #### Arity
 
-The name and number of parameters uniquely identify a function. `function1(x)` and `function1(x, y)` are two completely different and independent functions. Refer to them as function1/1 and function2/2.
+The name and number of parameters uniquely identify a function. `function1(x)` and `function1(x, y)` are two completely different and independent functions. Refer to them as function1/1 and function1/2.
 
 #### Blocks
 
